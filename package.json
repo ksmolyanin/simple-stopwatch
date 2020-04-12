@@ -1,6 +1,6 @@
 {
   "name": "simplest-stopwatch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simplest JS stopwatch for simple benchmarking",
   "author": "Konstantin Smolyanin",
   "license": "MIT",

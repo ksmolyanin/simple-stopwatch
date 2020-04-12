@@ -14,13 +14,16 @@ export function timeStart() {
 /**
  * Get time since the starting point (defined by the key param).
  * @param {Symbol} key value from {@link timeStart}
- * @param {Object} options
+ * @param {Object} [options]
  * @property {string} [options.unit='ms'] "ms" - milliseconds (default) or "s" - seconds
  * @property {boolean} [options.round=false] if `true` then round result to integer
  * @property {boolean} [options.clear=true] if `true` (default) then remove the starting point
  * @return {number}
  */
-export function timeStop(key, { unit = 'ms', round = false, clear = true }) {
+export function timeStop(
+    key,
+    { unit = 'ms', round = false, clear = true } = {}
+) {
     const stopPoint = performance.now();
 
     if (unit !== 'ms' && unit !== 's') {

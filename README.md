@@ -56,7 +56,7 @@ _Also available as `stopwatch.start()`._
 
 Begin duration measure. Returns starting point marker `key` that should be passed later to `timeStop()`.
 
-#### `timeStop(key, { unit = 'ms', round = false, clear = true })`
+#### `timeStop(key, { unit = 'ms', round = false, clear = true } = {})`
 
 _Also available as `stopwatch.stop()`._
 
@@ -64,12 +64,12 @@ Get time since the starting point (defined by the `key` param).
 
 ##### Params
 
-| Param         | Type    | Description                                                 |
-| ------------- | ------- | ----------------------------------------------------------- |
-| key           | Object  | value returned by `timeStart()`                             |
-| options.unit  | string  | "ms" - milliseconds (default) or "s" - seconds              |
-| options.round | boolean | if `true` then round result to integer (default is `false`) |
-| options.clear | boolean | if `true` (default) then remove the starting point. Setting it to `false` allows call `timeStop()` more then one time.          |
+| Param         | Type    | Description                                                                                                            |
+| ------------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
+| key           | Object  | value returned by `timeStart()`                                                                                        |
+| options.unit  | string  | "ms" - milliseconds (default) or "s" - seconds                                                                         |
+| options.round | boolean | if `true` then round result to integer (default is `false`)                                                            |
+| options.clear | boolean | if `true` (default) then remove the starting point. Setting it to `false` allows call `timeStop()` more then one time. |
 
 ## License
 
