@@ -1,0 +1,12 @@
+{
+  "name": "simplest-stopwatch",
+  "version": "1.0.0",
+  "description": "Simplest JS stopwatch for simple benchmarking",
+  "author": "Konstantin Smolyanin",
+  "license": "MIT",
+  "main": "stopwatch.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ksmolyanin/simplest-stopwatch.git"
+  }
+}
